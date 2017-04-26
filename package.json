@@ -1,6 +1,6 @@
 {
   "name": "jest-transform-graphql",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Jest transformer for .gql imports",
   "main": "index.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "https://github.com/remind101/jest-transform-graphql/issues"
   },
   "homepage": "https://github.com/remind101/jest-transform-graphql#readme",
-  "dependencies": {
-    "graphql-tag": "^1.1.2"
+  "peerDependencies": {
+    "graphql-tag": "^2.0.0"
   }
 }
