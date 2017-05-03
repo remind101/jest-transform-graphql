@@ -20,7 +20,7 @@
     "url": "https://github.com/remind101/jest-transform-graphql/issues"
   },
   "homepage": "https://github.com/remind101/jest-transform-graphql#readme",
-  "dependencies": {
+  "peerDependencies": {
     "graphql-tag": "^2.0.0"
   }
 }

@@ -1,7 +1,9 @@
-const gql = require('graphql-tag');
+const loader = require('graphql-tag/loader');
 
 module.exports = {
-  process(src, _filename, _config, _options) {
-    return 'module.exports = ' + JSON.stringify(gql`${src}`) + ';';
+  process(src) {
+    // call directly the webpack loader with a mocked context 
+    // as graphql-tag/loader leverages `this.cacheable()`
+    return loader.call({ cacheable() {} }, src);
   },
 };
