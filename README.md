@@ -13,6 +13,7 @@ In your package.json,
       "\\.(gql|graphql)$": "jest-transform-graphql",
       ".*": "babel-jest"
     }
+  }
 ```
 
 
